@@ -10,13 +10,13 @@
 <ion-content [fullscreen]="true" #content>
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Acercar de</ion-title>
+      <ion-title size="large">Acerca de</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <ion-card>
     <p>
-      <span class="head">Versión</span>: La versión actual es 4.0.0.
+      <span class="head">Versión</span>: La versión actual es {{ currentVersion }}.
     </p>
     <p>
       <span class="head">Creador</span>: Gacs.
@@ -45,5 +45,8 @@
   </ion-card>
   <!---->
 
-  <ion-button *ngIf="isApp" expand="block" (click)="checkVersion()">Comprobar Actualizaciones</ion-button>
+  <ion-button expand="block" (click)="checkVersion()" [disabled]="isLoading">
+    <ion-spinner *ngIf="isLoading" name="crescent" slot="start"></ion-spinner>
+    {{ isLoading ? 'Comprobando...' : 'Comprobar Actualizaciones' }}
+  </ion-button>
 </ion-content>

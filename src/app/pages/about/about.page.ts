@@ -12,6 +12,8 @@ export class AboutPage implements OnInit {
 
   isApp: boolean = false;
   isMobile: boolean = false;
+  currentVersion: string = '';
+  isLoading: boolean = false;
   private readonly GITHUB_REPO = 'BCNITB/Tiflodudas';
   private readonly GITHUB_API_URL = `https://api.github.com/repos/${this.GITHUB_REPO}/releases/latest`;
 
@@ -22,14 +24,17 @@ export class AboutPage implements OnInit {
     private http: HttpClient
   ) { }
 
-  ngOnInit() {
+  async ngOnInit() {
     this.isApp = this.platform.is('hybrid');
     this.isMobile = this.platform.is('mobile');
+    this.currentVersion = await this.updateService.getCurrentAppVersion();
   }
 
   async checkVersion() {
+    this.isLoading = true;
     this.http.get<any>(this.GITHUB_API_URL).subscribe({
       next: async (data) => {
+        this.isLoading = false;
         const latestVersion = data.tag_name.replace(/^v/, ''); // Remove 'v' prefix if present
         const currentVersion = await this.updateService.getCurrentAppVersion();
 
@@ -40,6 +45,7 @@ export class AboutPage implements OnInit {
         }
       },
       error: (err) => {
+        this.isLoading = false;
         console.error('Error checking for updates:', err);
         this.presentErrorAlert();
       }

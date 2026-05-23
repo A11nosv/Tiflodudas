@@ -19,7 +19,7 @@ export class UpdateService {
     } else {
       // For web, you might read from package.json or a custom config file
       // For simplicity, let's return a placeholder or a known web version
-      return '1.0.0'; // Placeholder for web version
+      return '4.0.0'; // Updated to match package.json
     }
   }
 
