@@ -56,28 +56,28 @@ export class AssistantPage implements OnInit {
     { 
       label: 'Software didáctico', 
       value: 'didactico', 
-      url: 'https://notebooklm.google.com/notebook/placeholder-didactico',
+      url: 'https://notebooklm.google.com/notebook/5095a9d0-779f-4499-a836-07eed1453a16',
       icon: 'school-outline',
       description: 'Programas y aplicaciones diseñadas para el aprendizaje y la formación adaptada.'
     },
     { 
       label: 'Asistentes Virtuales', 
       value: 'asistentes', 
-      url: 'https://notebooklm.google.com/notebook/placeholder-asistentes',
+      url: 'https://notebooklm.google.com/notebook/f930573b-8da2-4320-8c1c-1a23ca7b771a',
       icon: 'mic-outline',
       description: 'Información sobre asistentes de voz y dispositivos inteligentes como Alexa, Siri y Google Assistant.'
     },
     { 
       label: 'Mecanografía', 
       value: 'mecanografia', 
-      url: 'https://notebooklm.google.com/notebook/placeholder-mecanografia',
+      url: 'https://notebooklm.google.com/notebook/934f91f3-0978-4cd6-87ec-b8758d53a56a',
       icon: 'keyboard-outline',
       description: 'Recursos y guías para el aprendizaje y perfeccionamiento de la mecanografía adaptada.'
     },
     { 
       label: 'OCR', 
       value: 'ocr', 
-      url: 'https://notebooklm.google.com/notebook/placeholder-ocr',
+      url: 'https://notebooklm.google.com/notebook/aa67a09b-57ab-4ee4-8346-460124df582d',
       icon: 'scan-outline',
       description: 'Información sobre sistemas de reconocimiento óptico de caracteres para convertir texto impreso en digital.'
     },
