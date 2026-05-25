@@ -84,21 +84,21 @@ export class AssistantPage implements OnInit {
     { 
       label: 'Reproductores Daisy', 
       value: 'daisy', 
-      url: 'https://notebooklm.google.com/notebook/placeholder-daisy',
+      url: 'https://notebooklm.google.com/notebook/6b2ca84c-6c01-4aef-9d4c-46076706eabf',
       icon: 'play-circle-outline',
       description: 'Libros hablados digitales y reproductores compatibles con el estándar DAISY.'
     },
     { 
       label: 'Lupas Televisión', 
       value: 'lupas-tv', 
-      url: 'https://notebooklm.google.com/notebook/placeholder-lupas-tv',
+      url: 'https://notebooklm.google.com/notebook/210aaf3d-a4b6-49a5-9db1-c32362ed4e7c',
       icon: 'tv-outline',
       description: 'Sistemas de ampliación de gran formato para la lectura de documentos y visualización de objetos.'
     },
     { 
       label: 'Software ONCE', 
       value: 'software-once', 
-      url: 'https://notebooklm.google.com/notebook/placeholder-software-once',
+      url: 'https://notebooklm.google.com/notebook/1440548f-0edb-454d-a64a-2ae32628f977',
       icon: 'apps-outline',
       description: 'Programas y herramientas específicas desarrolladas por la ONCE para facilitar la accesibilidad y el trabajo diario.'
     },
